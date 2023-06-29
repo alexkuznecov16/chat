@@ -47,7 +47,7 @@ document.getElementById('sendMessage').addEventListener('click', (event) => {
     event.preventDefault();
     let msgText = document.getElementById('msgValue');
     if (msgText.value === ''){
-        alert('Ошибка: сообщение должно содержать как минимум 1 символ!');
+        alert('Error: your message is empty!');
     } else {
         const date = getDate();
         chat.innerHTML += `<div class="message sender-msg">${msgText.value} <span class="date">${date}</span></div>`; // message adding
